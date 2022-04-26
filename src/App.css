@@ -42,12 +42,19 @@
   border: 2px solid #aaa;
   padding: 10px;
   margin: 10px;
-  max-width: 450px;
-  min-width: 450px;
+  max-width: 25%;
+  min-width: 25%;
   padding: 10px 32px;
   flex-direction: column;
   text-decoration: none;
   color: #ddd;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .elementTitle {
@@ -64,7 +71,7 @@
 .elementImage {
   border-radius: 10px;
   height: auto;
-  width: 350px;
+  width: 100%;
 }
 
 .searchInput {

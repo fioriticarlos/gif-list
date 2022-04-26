@@ -20,7 +20,7 @@ export default function ListOfGifs ({params}) {
         return  'Loading...'
     }
 
-    return <div>
+    return <div className='container'>
         { 
             gifs.map(singleGif => 
                 <Gif 
