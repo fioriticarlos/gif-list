@@ -19,8 +19,8 @@ function App() {
     return (
         <div className="App">
             <section className="App-content">
-                <h1>List of Gifs</h1>
-                {/* <Search keyword={keyword} /> */}
+                <h1 className='pageTitle'> List of Gifs </h1>
+
                 <form className="search" onSubmit={handleSubmit}>
                     <input 
                         className="searchInput"
