@@ -37,7 +37,7 @@
   }
 }
 
-.element {
+.gif {
   border-radius: 3.5%;
   border: 2px solid #aaa;
   padding: 10px;
@@ -50,25 +50,25 @@
   color: #ddd;
 }
 
-.container {
+.gifs {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
 }
 
-.elementTitle {
+.gifTitle {
   font-family: monospace;
 }
 
-.elementId {
+.gifId {
   margin: 10px;
   font-family: monospace;
   font-size: 15px;
   display: none;
 }
 
-.elementImage {
+.gifImage {
   border-radius: 10px;
   height: auto;
   width: 100%;

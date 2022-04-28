@@ -1,18 +1,20 @@
 import { useState } from 'react'
 import './App.css'
 import ListOfGifs from './components/ListOfGifs'
-import { Link, Route } from "wouter"
+import { Link, Route, useLocation } from "wouter"
 // import Search from './components/Search';
 
 function App() {
     const [keyword, setKeyword] = useState('')
-
-    const handleChange = (event) => {
-        setKeyword(event.target.value)
-    }
+    const [path, pushLocation] = useLocation('')
 
     const handleSubmit = (event) => {
         event.preventDefault()
+        // setKeyword(event.target.value)
+        pushLocation(`/gif/${keyword}`)
+    }
+
+    const handleChange = (event) => {
         setKeyword(event.target.value)
     }
 
@@ -29,9 +31,7 @@ function App() {
                         onChange={handleChange}
                         placeholder='Type in...'
                     />
-                    <Link to={`/gif/${keyword}`} >
-                        <button className="searchButon" onClick={handleChange} type="submit" >Search</button>
-                    </Link>
+                    <button className="searchButon" >Search</button>
                 </form>
                 <Route 
                     component={ListOfGifs} 

@@ -20,7 +20,7 @@ export default function ListOfGifs ({params}) {
         return  'Loading...'
     }
 
-    return <div className='container'>
+    return <ul className='gifs'>
         { 
             gifs.map(singleGif => 
                 <Gif 
@@ -31,5 +31,5 @@ export default function ListOfGifs ({params}) {
                 />
             )
         }
-    </div>
+    </ul>
 }
