@@ -21,7 +21,9 @@ function App() {
     return (
         <div className="App">
             <section className="App-content">
-                <h1 className='pageTitle'> List of Gifs </h1>
+                <h1 className='pageTitle'> 
+                    <Link to=''>List of Gifs</Link>
+                </h1>
 
                 <form className="search" onSubmit={handleSubmit}>
                     <input 
