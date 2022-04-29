@@ -22,7 +22,7 @@ function App() {
         <div className="App">
             <section className="App-content">
                 <h1 className='pageTitle'> 
-                    <Link to=''>List of Gifs</Link>
+                    <a href="https://listofgifs.netlify.app/">List of Gifs</a>
                 </h1>
 
                 <form className="search" onSubmit={handleSubmit}>
